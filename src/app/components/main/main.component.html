@@ -1,2 +1,8 @@
-<p>main works!</p>
-<app-search-page [pokemons]="pokemons$ | async"></app-search-page>
+<!--
+Je souhaitais implémenter le panier en mode bandeau déroulant présent au dessus de l'appli (comme un header). Cependant,
+comme j'ai eu quelques soucis autour de l'implémentation des données,je ne l'ai pas mis en place (cf ReadMe)
+-->
+
+<app-panier (cartUpdated)="changeUpdateValue($event)" [updateCart]="updatedCart"></app-panier>
+<app-search-page (searchEvent)="launchSearchCall($event)" (updatedCart)="changeUpdateValue($event)"
+                 [pokemons]="pokemons$ | async" class="main"></app-search-page>

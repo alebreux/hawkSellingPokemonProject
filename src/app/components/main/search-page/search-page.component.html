@@ -1,5 +1,20 @@
 <h2>Pokemons</h2>
 
-<div *ngFor="let pokemon of pokemons">
-  {{pokemon.name}}
+<div class="searchInput">
+  <form [formGroup]="form">
+    <mat-form-field class="form-group">
+
+      <div class="form__group field">
+        <input (keydown)="searchInputChanged()" class="form__field" formControlName="searchInput" id='name' matInput
+               name="Rechercher"/>
+        <label class="form__label" for="name">Name</label>
+      </div>
+    </mat-form-field>
+  </form>
 </div>
+
+<ul class="list-pokemon">
+  <li *ngFor="let pokemon of pokemons" class="item">
+    <app-pokemon-card (pokemonAdded)=this.onAdd($event) [pokemon]="pokemon"></app-pokemon-card>
+  </li>
+</ul>

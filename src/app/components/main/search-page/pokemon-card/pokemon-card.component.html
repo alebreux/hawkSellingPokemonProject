@@ -1,0 +1,14 @@
+<div class="card">
+  <div class="image">
+    <img [src]="pokemon.images.small" alt="">
+  </div>
+  <div class="main-infos">
+    <div class="card-title">
+      {{pokemon.name}}
+    </div>
+    <div class="price">
+      {{pokemon.cardmarket.prices.trendPrice}}&nbsp;€
+    </div>
+    <button (click)="addToCart(pokemon)">Add</button>
+  </div>
+</div>
