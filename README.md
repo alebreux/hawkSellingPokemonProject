@@ -37,5 +37,8 @@ une connectivité relativement limité, l'utilisateur ne verrais pas d'images à
 nous trouvons sur l'appli. Cependant, les problèmes que j'ai eu avec l'implémentation de la récupération des données du
 panier m'ont arréter dans cet ajout
 
+#### Aspect visuel
 
-
+Certe c'est sobre, j'aurai pus faire plus extravagant, ou plys stylé, je ne l'ai pas souhaité. je voulais avancer sur
+l'aspect technique et fonctionnel à priori. Si j'avais eu le temps, j'aurai ajouté un peu de couleur (quoique les photos
+des pokémons sufissent en soit)
